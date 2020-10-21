@@ -1,21 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from "react";
+import { StyleSheet } from "react-native";
+import MapView from "react-native-maps";
+import {
+  requestPermissionsAsync,
+  getCurrentPositionAsync,
+} from "expo-location";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  useEffect(() => {
+    async function loadInitialPosition() {
+      const { granted } = await requestPermissionsAsync();
+
+      if (granted) {
+        const { coords } = await getCurrentPositionAsync({
+          // enableWighAccuracy: true
+        });
+
+        const { latitude, longitude } = coords;
+      }
+    }
+    console.log("aqui");
+    loadInitialPosition();
+  }, []);
+
+  return <MapView style={styles.map} />;
 }
 
 const styles = StyleSheet.create({
-  container: {
+  map: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
