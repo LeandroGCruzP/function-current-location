@@ -19,3 +19,7 @@
 ## ⚠️ NO TE OLVIDES ⚠️
 
 - 😀 [Sigueme en Github 🙋‍♂️❤️](https://github.com/LeandroGCruzP)
+
+### y si quieres
+
+- 😘 [Sigueme en Instagram 📷](https://www.instagram.com/lea_gcruz/)
