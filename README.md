@@ -13,8 +13,11 @@
 ### 🔧 TypeScript
 
 ## 🕺 Clona este repositorio 🕺
-
-### Solo necesitas clonar el repositorio, extraerlo y abrirlo en tu editor de texto (por ejemplo, VSCode) y hacer un npm install (o yarn install) en tu terminal para instalar las dependencias. Luego para ejecutar el proyecto en tu terminal escribes: npm start (o yarn start) y todo listo. 👌
+### Primero debes clonar el repositorio y extraerlo en tu computador, luego abres el proyecto en tu editor de codigo favorito (ejemplo VSCode) y en su terminal integrado dentro del proyecto ingresas el comando
+	> yarn install
+### y listo, todas las dependencias de package.json estarán instalados.
+### Para ejecutar el proyecto lo haces con el comando 👌
+	> yarn start
 
 ## ⚠️ NO TE OLVIDES ⚠️
 
